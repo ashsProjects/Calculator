@@ -432,7 +432,7 @@ public class StandardPanel extends JPanel {
                 userInput = "";
             }
 
-            private static String calculateTotal(String userInput) {
+            private String calculateTotal(String userInput) {
                 boolean multOrDiv = true;
                 
                 try {
@@ -593,7 +593,7 @@ public class StandardPanel extends JPanel {
             
             }//end calculateTotal method
 
-            private static String findPrevNumber(String str) {
+            private String findPrevNumber(String str) {
                 int i = str.length() - 2;
                 String s = "";
                 while (i >= 0 && str.charAt(i) != ' ') {
