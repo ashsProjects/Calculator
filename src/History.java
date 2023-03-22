@@ -81,7 +81,6 @@ public class History extends JPanel {
                 File file = new File("history.txt");
                 if (file.delete()) {
                     JOptionPane.showMessageDialog(null, "Successfully deleted!");
-                    model.fireTableDataChanged();
                 } else
                     JOptionPane.showMessageDialog(null, "Failed to delete the file.", "Error", 2);
             }
